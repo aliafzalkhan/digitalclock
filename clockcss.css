@@ -1,0 +1,40 @@
+
+    body {
+        background-image: url(wall.jpg);
+        
+        background-repeat: no-repeat;
+        
+        width: 100%;
+    }
+
+    .container {
+        border: 5px solid #64a856;
+        height: 80px;
+        width: 80px;
+        margin-left: 70%;
+        margin-top: 30px;
+        background-color: black;
+        text-align: center;
+        padding-bottom: px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    #time {
+        border: 0px solid blue;
+
+        border-bottom: 0px ridge;
+        height: 20%;
+        width: auto;
+        font-size: 14px;
+        align-content: center;
+        margin: auto;
+        margin-top: 30%;
+
+    }
+
+    .TV {
+        border: 2px solid black;
+        width: 560px;
+        height: 315px;
+    }

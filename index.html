@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>clock</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="clockcss.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div id="time">
+
+        </div>
+    </div>
+
+    <script>
+        var a;
+        var m;
+        var s;
+        var h;
+        var day;
+        var month;
+        var year;
+        setInterval(function () {
+            a = new Date();
+            h = (a.getHours() < 10 ? '0' : '') + a.getHours();
+            m = (a.getMinutes() < 10 ? '0' : '') + a.getMinutes();
+            s = (a.getSeconds() < 10 ? '0' : '') + a.getSeconds();
+            day = (a.getDate() < 10 ? '0' : '') + a.getDate();
+            month = (a.getMonth() + 1).toString().padStart(2, "0");
+            year = a.getFullYear()
+
+
+            document.getElementById("time").innerHTML = (h + ":" + m + ":" + s + "<br/><br/>" + day + "-" + month + "-" + year)
+
+        }, 1000)
+
+
+    </script>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
